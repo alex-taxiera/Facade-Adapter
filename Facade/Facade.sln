@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade_Adapter", "Facade_Adapter\Facade_Adapter.csproj", "{FC4D3D28-483E-4B1B-9E95-54825DEE350D}"
-EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{F9C8EC06-6D3E-4DD9-8EBF-AB1C73CBDFB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{5D4A108B-E961-4E3C-8FAC-F82DC7F935BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FC4D3D28-483E-4B1B-9E95-54825DEE350D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC4D3D28-483E-4B1B-9E95-54825DEE350D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC4D3D28-483E-4B1B-9E95-54825DEE350D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC4D3D28-483E-4B1B-9E95-54825DEE350D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F9C8EC06-6D3E-4DD9-8EBF-AB1C73CBDFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F9C8EC06-6D3E-4DD9-8EBF-AB1C73CBDFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F9C8EC06-6D3E-4DD9-8EBF-AB1C73CBDFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F9C8EC06-6D3E-4DD9-8EBF-AB1C73CBDFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D4A108B-E961-4E3C-8FAC-F82DC7F935BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4A108B-E961-4E3C-8FAC-F82DC7F935BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4A108B-E961-4E3C-8FAC-F82DC7F935BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4A108B-E961-4E3C-8FAC-F82DC7F935BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

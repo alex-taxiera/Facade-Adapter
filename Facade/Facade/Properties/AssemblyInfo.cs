@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Facade_Adapter")]
+[assembly: AssemblyTitle("Facade")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Facade_Adapter")]
+[assembly: AssemblyProduct("Facade")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fc4d3d28-483e-4b1b-9e95-54825dee350d")]
+[assembly: Guid("5d4a108b-e961-4e3c-8fac-f82dc7f935bf")]
 
 // Version information for an assembly consists of the following four values:
 //
