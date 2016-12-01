@@ -10,6 +10,9 @@ namespace Facade
     {
         static void Main(string[] args)
         {
+            string[] books = System.IO.File.ReadAllLines("books.txt");
+
+
             // Creating the Order/Product details
             OrderDetails orderDetails = new OrderDetails("Design Pattern Book",
                                                          "Simplified book on design patterns",
