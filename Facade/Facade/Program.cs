@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Facade
 {
@@ -10,10 +11,6 @@ namespace Facade
     {
         static void Main(string[] args)
         {
-            string[] books = System.IO.File.ReadAllLines("books.txt");
-
-
-            // Creating the Order/Product details
             OrderDetails orderDetails = new OrderDetails("Design Pattern Book",
                                                          "Simplified book on design patterns",
                                                          500,

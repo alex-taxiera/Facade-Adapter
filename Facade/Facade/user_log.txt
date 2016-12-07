@@ -1,6 +1,0 @@
-alex
-pass
-admin
-joe
-pass
-customer

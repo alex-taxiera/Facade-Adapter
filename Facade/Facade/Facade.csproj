@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminManager.cs" />
     <Compile Include="CostManager.cs" />
     <Compile Include="Forms\AdminForm.cs">
       <SubType>Form</SubType>
@@ -71,6 +72,7 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PromptDialogue.cs" />
+    <Compile Include="IAdmin.cs" />
     <Compile Include="ICosting.cs" />
     <Compile Include="IInventory.cs" />
     <Compile Include="ILogistics.cs" />
@@ -87,6 +89,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

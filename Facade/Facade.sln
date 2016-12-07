@@ -6,10 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{5D4A108B-E961-4E3C-8FAC-F82DC7F935BF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A568E2C6-0671-41B6-B3A7-9D508FB5ADCE}"
-	ProjectSection(SolutionItems) = preProject
-		AdminManager.cs = AdminManager.cs
-		IAdmin.cs = IAdmin.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
