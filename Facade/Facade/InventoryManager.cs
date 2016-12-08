@@ -18,7 +18,7 @@ namespace Facade
                 {
                     if (items[i] == books[j])
                     {
-                        int stock = Int32.Parse(books[i + 3]) - 1;
+                        int stock = Int32.Parse(books[j + 3]) - 1;
                         books[j + 3] = (stock.ToString());
                     }
                 }

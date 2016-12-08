@@ -9,7 +9,7 @@ namespace Facade
     class OrderDetails
     {
         public string ProductName { get; set; }
-        public string Price { get; set; }
+        public int Price { get; set; }
         public string DiscountPercent { get;set; }
         public string Name { get; set; }
         public string AddressLine1 { get; set; }
@@ -17,13 +17,13 @@ namespace Facade
         public OrderDetails()
         {
             this.ProductName = "";
-            this.Price = "";
+            this.Price = 0;
             this.DiscountPercent = "";
             this.Name = "";
             this.AddressLine1 = "";
             this.CardNo = "";
         }
-        public OrderDetails(string productName, string prodDescription, string price,
+        public OrderDetails(string productName, string prodDescription, int price,
                             string discount, string name, string addressLine1,
                             string cardNo)
         {

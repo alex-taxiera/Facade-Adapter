@@ -49,7 +49,7 @@ namespace Facade
                 if (Convert.ToBoolean(dataGridView1.Rows[i].Cells[0].Value))
                 {
                     test.ProductName += dataGridView1.Rows[i].Cells[1].Value + ",";
-                    test.Price += dataGridView1.Rows[i].Cells[3].Value;
+                    test.Price += Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
                     test.Name = nameBox.Text;
                     test.AddressLine1 = addressBox.Text;
                     test.CardNo = cardBox.Text;
@@ -60,6 +60,8 @@ namespace Facade
             
             MessageBox.Show(facade.FinalizeOrder(test, books), "My Application", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
             File.WriteAllLines("books.txt", books, Encoding.UTF8);
+            System.Diagnostics.Process.Start(Application.ExecutablePath); // to start new instance of application
+            this.Close(); //to turn off current app
         }
 
         private void cartButton_Click(object sender, EventArgs e)

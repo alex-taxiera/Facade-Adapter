@@ -33,10 +33,11 @@ namespace Facade
             username = Username_Textbox.Text;
             password = Password_Textbox.Text;
 
-            line = userData.ReadLine();
 
+            bool login = false;
             do
             {
+                line = userData.ReadLine();
                 if (line == username)
                 {
                     line = userData.ReadLine();
@@ -46,15 +47,19 @@ namespace Facade
 
                         if (line == "admin")
                         {
+                            login = true;
+                            userData.Close();
                             AdminForm admin = new AdminForm();
-                            admin.Show();
                             this.Hide();
+                            admin.ShowDialog();
                         }
                         else if (line == "user")
                         {
+                            login = true;
+                            userData.Close();
                             UserDirectoryForm user = new UserDirectoryForm();
-                            user.Show();
                             this.Hide();
+                            user.Show();
                         }
                         else
                         {
@@ -64,9 +69,15 @@ namespace Facade
                     else
                     {
                         MessageBox.Show("Invalid Login", "Login Error", MessageBoxButtons.OK);
+                        line = userData.ReadLine();
                     }
                 }
-            } while (!userData.EndOfStream);
+                else
+                {
+                    line = userData.ReadLine();
+                    line = userData.ReadLine();
+                }
+            } while (!login);
 
             MessageBox.Show("Invalid Login", "Login Error", MessageBoxButtons.OK);
         }

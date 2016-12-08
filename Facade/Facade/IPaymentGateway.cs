@@ -9,6 +9,6 @@ namespace Facade
     interface IPaymentGateway
     {
         string VerifyCardDetails(string cardNo);
-        string ProcessPayment(string cardNo, string cost);
+        string ProcessPayment(string cardNo, int cost);
     }
 }

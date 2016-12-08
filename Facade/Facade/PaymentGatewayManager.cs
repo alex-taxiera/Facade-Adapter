@@ -14,7 +14,7 @@ namespace Facade
                                              cardNo);
         }
 
-        public string ProcessPayment(string cardNo, string cost)
+        public string ProcessPayment(string cardNo, int cost)
         {
             return string.Format("Card# {0} is used to make a payment of ${1}.\n", cardNo, cost);
         }

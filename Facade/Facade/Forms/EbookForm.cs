@@ -86,12 +86,13 @@ namespace Facade
 
         private void Cancel_Button_Click(object sender, EventArgs e)
         {
-            this.Close();
+ 
         }
 
         private void Cancel_Button_Click_1(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start(Application.ExecutablePath); // to start new instance of application
+            this.Close(); //to turn off current app
         }
     }
 }
