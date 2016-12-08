@@ -71,6 +71,12 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PromptDialogue.cs" />
+    <Compile Include="Forms\UserDirectoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserDirectoryForm.Designer.cs">
+      <DependentUpon>UserDirectoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ICosting.cs" />
     <Compile Include="IInventory.cs" />
     <Compile Include="ILogistics.cs" />
@@ -87,8 +93,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\EbookForm.resx">
+      <DependentUpon>EbookForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserDirectoryForm.resx">
+      <DependentUpon>UserDirectoryForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
