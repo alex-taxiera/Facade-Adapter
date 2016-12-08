@@ -8,9 +8,9 @@ namespace Facade
 {
     class LogisticsManager:ILogistics
     {
-        public void ShipProduct(string productName, string name, string shippingAddress)
+        public string ShipProduct(string productName, string name, string shippingAddress)
         {
-            Console.WriteLine(string.Format("Congratulations {0}, your product '{1}' has been shipped to the following address:\n{2}", name, productName, shippingAddress));
+            return string.Format("Congratulations {0}, your product '{1}' has been shipped to the following address:\n{2}", name, productName, shippingAddress);
         }
     }
 }

@@ -8,6 +8,6 @@ namespace Facade
 {
     interface ICosting
     {
-        float ApplyDiscounts(float price, float discountPercent);
+        string ApplyDiscounts(string price);
     }
 }

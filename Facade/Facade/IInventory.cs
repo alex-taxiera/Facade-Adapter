@@ -8,6 +8,6 @@ namespace Facade
 {
     interface IInventory
     {
-        void Update(int productId);
+        void Update(string productId, string[] books);
     }
 }

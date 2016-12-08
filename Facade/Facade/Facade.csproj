@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminManager.cs" />
+    <Compile Include="Book.cs" />
     <Compile Include="CostManager.cs" />
     <Compile Include="Forms\AdminForm.cs">
       <SubType>Form</SubType>
@@ -91,6 +92,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookstoreForm.resx">
+      <DependentUpon>BookstoreForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

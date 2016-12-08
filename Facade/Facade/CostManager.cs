@@ -8,10 +8,13 @@ namespace Facade
 {
     class CostManager:ICosting
     {
-        public float ApplyDiscounts(float price, float discountPercent)
+        public string ApplyDiscounts(string price)
         {
-            Console.WriteLine(string.Format("A discount of {0}% has been applied on the product's price of ${1}", discountPercent, price));
-            return price - ((discountPercent / 100) * price);
+            //Console.WriteLine(string.Format("A discount of % has been applied on the product's price of ${1}", price));
+            Random rnd = new Random();
+            // * ( rnd.Next(1, 15)/100) Int32.Parse(price)
+            int newPrice = Int32.Parse(price) - 5;
+            return newPrice.ToString(); //- ((discountPercent / 100) * price);
         }
     }
 }

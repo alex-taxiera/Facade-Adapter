@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-namespace Facade_Adapter.Forms
+namespace Facade
 {
     public partial class AdminForm : Form
     {
         IAdmin admin = new AdminManager();
-        string[] books = System.IO.File.ReadAllLines("books.txt");
+        string[] books = File.ReadAllLines("books.txt");
         public AdminForm()
         {
             InitializeComponent();

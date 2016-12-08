@@ -8,9 +8,21 @@ namespace Facade
 {
     class InventoryManager:IInventory
     {
-        public void Update(int productId)
+        public void Update(string productId, string[] books)
         {
-            Console.WriteLine(string.Format("One unit of product# {0} is subtracted from the store's inventory.", productId));
+            char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
+            string[] items = productId.Split(delimiterChars);
+            for (int i = 0; i < items.Length; i++)
+            {
+                for(int j = 0; j < books.Length; j++)
+                {
+                    if (items[i] == books[j])
+                    {
+                        int stock = Int32.Parse(books[i + 3]) - 1;
+                        books[j + 3] = (stock.ToString());
+                    }
+                }
+            }
        }
     }
 }

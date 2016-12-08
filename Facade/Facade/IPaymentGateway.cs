@@ -8,7 +8,7 @@ namespace Facade
 {
     interface IPaymentGateway
     {
-        bool VerifyCardDetails(string cardNo);
-        bool ProcessPayment(string cardNo, float cost);
+        string VerifyCardDetails(string cardNo);
+        string ProcessPayment(string cardNo, string cost);
     }
 }

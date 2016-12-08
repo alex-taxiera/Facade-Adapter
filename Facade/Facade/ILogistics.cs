@@ -8,6 +8,6 @@ namespace Facade
 {
     interface ILogistics
     {
-        void ShipProduct(string productName, string name, string shippingAddress);
+        string ShipProduct(string productName, string name, string shippingAddress);
     }
 }

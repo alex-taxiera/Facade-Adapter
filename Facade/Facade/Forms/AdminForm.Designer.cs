@@ -1,4 +1,4 @@
-﻿namespace Facade_Adapter.Forms
+﻿namespace Facade
 {
     partial class AdminForm
     {

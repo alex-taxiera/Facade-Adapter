@@ -13,13 +13,16 @@ namespace Facade
         IPaymentGateway paymentGateWay = new PaymentGatewayManager();
         ILogistics logistics = new LogisticsManager();
 
-        public void FinalizeOrder(OrderDetails orderDetails)
+        public string FinalizeOrder(OrderDetails orderDetails, string[] books)
         {
-            inventory.Update(orderDetails.ProductNo);
-            orderDetails.Price = costManager.ApplyDiscounts(orderDetails.Price, orderDetails.DiscountPercent);
-            paymentGateWay.VerifyCardDetails(orderDetails.CardNo);
-            paymentGateWay.ProcessPayment(orderDetails.CardNo, orderDetails.Price);
-            logistics.ShipProduct(orderDetails.ProductName, orderDetails.Name, string.Format("{0}, {1}", orderDetails.AddressLine1, orderDetails.AddressLine2));
+            string message = "";
+            inventory.Update(orderDetails.ProductName, books);
+            orderDetails.Price = costManager.ApplyDiscounts(orderDetails.Price);
+            message += "Total after discounts: " + orderDetails.Price;
+            message += paymentGateWay.VerifyCardDetails(orderDetails.CardNo);
+            message += paymentGateWay.ProcessPayment(orderDetails.CardNo, orderDetails.Price);
+            message += logistics.ShipProduct(orderDetails.ProductName, orderDetails.Name, string.Format("{0}", orderDetails.AddressLine1));
+            return message;
         }
     }
 }
