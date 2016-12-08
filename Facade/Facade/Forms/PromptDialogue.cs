@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Facade_Adapter.Forms
+namespace Facade
 {
     class PromptDialogue
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Facade_Adapter.Forms
+namespace Facade
 {
     public partial class EbookForm : Form
     {
@@ -87,6 +87,11 @@ namespace Facade_Adapter.Forms
         private void Cancel_Button_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Cancel_Button_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Facade_Adapter
+﻿namespace Facade
 {
     partial class LoginForm
     {

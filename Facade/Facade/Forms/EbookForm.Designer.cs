@@ -1,4 +1,4 @@
-﻿namespace Facade_Adapter.Forms
+﻿namespace Facade
 {
     partial class EbookForm
     {
@@ -61,6 +61,7 @@
             this.Cancel_Button.TabIndex = 2;
             this.Cancel_Button.Text = "Cancel";
             this.Cancel_Button.UseVisualStyleBackColor = true;
+            this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click_1);
             // 
             // EbookForm
             // 

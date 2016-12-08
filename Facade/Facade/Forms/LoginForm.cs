@@ -8,9 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using Facade_Adapter.Forms;
 
-namespace Facade_Adapter
+namespace Facade
 {
     public partial class LoginForm : Form
     {
@@ -28,7 +27,7 @@ namespace Facade_Adapter
 
         private void Login_Button_Click(object sender, EventArgs e)
         {
-            StreamReader userData = new StreamReader("userData.txt");
+            StreamReader userData = new StreamReader("user_log.txt");
             string line;
 
             username = Username_Textbox.Text;
@@ -45,13 +44,13 @@ namespace Facade_Adapter
                     {
                         line = userData.ReadLine();
 
-                        if (line == "A")
+                        if (line == "admin")
                         {
                             AdminForm admin = new AdminForm();
                             admin.Show();
                             this.Hide();
                         }
-                        else if (line == "U")
+                        else if (line == "user")
                         {
                             UserDirectoryForm user = new UserDirectoryForm();
                             user.Show();
